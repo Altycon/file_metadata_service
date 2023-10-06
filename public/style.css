@@ -3,15 +3,11 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: #222;
-  background-color: #ECF0F1;
+  color: hsl(0 0% 80%);
+  background-color: hsl(0 0% 5%);
   text-align: center;
 }
 
-.container {
-  padding: 0;
-  margin-top: 40px;
-}
 
 .footer {
   margin-top: 60px;
@@ -24,19 +20,59 @@ a {
 input {
   display: block;
   position: relative;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 input#button {
   width: 230px;
+  padding: 5px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 900;
+  font-size: .7rem;
+  box-shadow: 2px 2px 5px hsl(0 0% 0%),
+  inset 2px 2px 5px hsl(0 0% 80%),
+  inset -2px -2px 5px hsl(0 0% 20%);
 }
 
-.view {
-  position:relative;
-  margin: auto;
-  margin-top: 40px;
-  border: 1px  solid  #aaa;
-  padding: 20px;
-  width: 60%;
-  min-width: 400px;
+code{
+  font-weight: 700;
+}
+
+main > *{
+  margin-bottom: 1.2rem;
+}
+
+.highlight{
+  color: orange;
+}
+/*	File Metadata	*/
+
+
+.file-metadata_header{
+	padding: 1rem;
+}
+.file-metadata_form > input{
+	font-size: .8rem;
+}
+.file-metadata_form > input::file-selector-button{
+	padding: 10px;
+	font-size: 1rem;
+}
+.file-metadata_form > button[type=submit]{
+	padding: 10px;
+	font-size: 1rem;
+}
+
+
+
+@media only screen and (min-width: 920px){
+	html{
+		font-size: 1.5rem;
+	}
+	code{
+		font-size: 1rem;
+	}
 }
